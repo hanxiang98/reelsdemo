@@ -1,0 +1,117 @@
+.icon-display{
+  transform: scale(0.8);
+}
+
+.reel-list {
+  max-width: 300px;
+}
+
+.spacer{
+  flex: 1;
+}
+
+.reel-header {
+  display: flex;
+  margin-top: 25px;
+}
+
+.reel-container {
+  width: 1050px;
+  max-width: 100%;
+  min-height: 630px;
+  margin: 0 0px 25px 0px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.reel-list-container {
+  width: 300px;
+  max-width: 100%;
+  margin: 0 25px 25px 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.reel-card-container {
+  width: 300px;
+  max-width: 100%;
+  margin: 0 100px 25px 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.reel-card {
+  max-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 25px 25px 0;
+}
+
+.example-card {
+  max-width: 300px;
+  min-height: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 25px 25px 0;
+}
+
+.example-container {
+  width: 300px;
+  max-width: 100%;
+  margin: 0 25px 25px 0;
+  display: inline-block;
+  vertical-align: top;
+}
+  
+.example-list {
+  border: solid 1px #ccc;
+  min-height: 60px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  display: block;
+}
+
+.all-clips-container{
+  margin-top: 25px;
+}
+
+.example-box {
+  padding: 20px 10px;
+  border-bottom: solid 1px #ccc;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  cursor: move;
+  background: white;
+  font-size: 14px;
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+              0 8px 10px 1px rgba(0, 0, 0, 0.14),
+              0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.example-box:last-child {
+  border: none;
+}
+
+.example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+
