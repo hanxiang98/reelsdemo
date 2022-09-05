@@ -9,21 +9,24 @@ import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { DialogModule } from '@angular/cdk/dialog';
+import {MatDialogModule} from '@angular/material/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ReelsComponent } from './views/reels/reels.component';
+import { EditReelDialogComponent, ReelsComponent } from './views/reels/reels.component';
 import { ClipsFilterPipe } from './pipes/clips-filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ReelsComponent,
-    ClipsFilterPipe
+    ClipsFilterPipe,
+    EditReelDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,10 @@ import { ClipsFilterPipe } from './pipes/clips-filter.pipe';
     FormsModule,
     MatTooltipModule,
     MatProgressBarModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    DialogModule,
+    ReactiveFormsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

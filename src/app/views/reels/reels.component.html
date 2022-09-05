@@ -43,12 +43,8 @@
                 <div class="spacer"></div>
 
                 <button mat-icon-button color="primary" 
-                matTooltip="Play this reel.">
-                    <mat-icon>play_arrow</mat-icon>
-                </button>
-
-                <button mat-icon-button color="primary" 
-                matTooltip="Edit this reel name.">
+                matTooltip="Edit this reel name."
+                (click)="editReel(selectedReel[0])">
                     <mat-icon>edit_square</mat-icon>
                 </button>
 
@@ -68,6 +64,7 @@
                     <div class="spacer"></div>
                     <button mat-icon-button color="primary" 
                     matTooltip="Clear all clips in this reel."
+                    [disabled]="selectedReel[0].clipsInReel.length == 0"
                     (click)="clearClipsInReel()">
                         <mat-icon>clear_all</mat-icon>
                     </button>
